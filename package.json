@@ -1,0 +1,24 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "description": "TaskMaster API   \r The TaskMaster API is a secure RESTful backend built with Node.js, Express, MongoDB, and Mongoose to support a productivity tool for managing users, projects, and tasks. It implements JWT-based authentication with password hashing using bcrypt, enforcing strict ownership-based authorization so that users can only access and manage their own data. The API allows users to register and log in, create and manage projects, and add tasks within those projects, with full CRUD functionality at each level. The codebase follows a modular structure with separate folders for configuration, models, routes, and utilities, and environment variables are managed securely through dotenv. The project emphasizes clean code, security best practices, and the DRY principle, serving as a capstone project that demonstrates the integration of authentication, authorization, database modeling, and RESTful API design.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
