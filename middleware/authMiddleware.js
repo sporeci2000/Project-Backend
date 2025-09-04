@@ -17,7 +17,7 @@ function verifyAuthentication(req, res, next) {
 
         console.log(payload);
 
-        req.user = payload.data;
+        req.user = payload;
 
         // If it is successful
         next();
